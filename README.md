@@ -3,11 +3,10 @@
 
 Predicting NFL player trajectories while the ball is in the air using spatiotemporal tracking data.
 
-This repository showcases a full, production-style machine learning pipeline built on real-world sports data (10 Hz tracking). It demonstrates how to transform raw movement data into predictive models using physics-inspired feature engineering and time-aware validation.
+This repository showcases a full, production style machine learning pipeline built on real world sports data (10 Hz tracking). It demonstrates how to transform raw movement data into predictive models using physics inspired feature engineering and time aware validation.
 
 > Author: **Tanjim Hossain**  
-> MSc Data Science / Automotive Software Engineering  
-> GitHub: https://github.com/<your-username>
+> MSc Data Science / Computer Science and Engineering
 
 ---
 
@@ -27,7 +26,7 @@ Each sample is identified by:
 
 ## 🧠 Approach
 
-This project follows an industry-style ML workflow:
+This project follows an industry style ML workflow:
 
 1. **Play Normalization**
    - All plays are transformed so the offense moves left → right.
@@ -74,7 +73,7 @@ This project follows an industry-style ML workflow:
 - **Kaggle Public Score:** ~0.77  
 - **Public Leaderboard Rank:** ~790  
 
-The XGBoost ensemble achieves the best trade-off between accuracy, stability, and efficiency.
+The XGBoost ensemble achieves the best trade-off between accuracy, stability and efficiency.
 
 ---
 
@@ -108,7 +107,6 @@ nfl-player-movement-prediction/
 ├── requirements.txt
 └── README.md
 
-
 ---
 
 ## 🛠 Tech Stack
@@ -130,6 +128,21 @@ The dataset is provided by Kaggle:
 Due to Kaggle’s data usage policy, raw data is **not** included in this repository.  
 After downloading, place the files in:
 
+data/raw/
+├── train_tracking_week_1.csv
+├── train_tracking_week_2.csv
+├── ...
+├── train_tracking_week_18.csv
+├── train_labels_week_1.csv
+├── train_labels_week_2.csv
+├── ...
+├── train_labels_week_18.csv
+├── players.csv
+├── plays.csv
+└── games.csv
+
+All notebooks and scripts assume this directory structure.  
+Paths are relative to the project root (`data/raw/train_tracking_week_1.csv`)
 
 ---
 
@@ -143,5 +156,5 @@ This repository demonstrates:
 - Model comparison and bias–variance trade-offs  
 - Production-style inference pipeline  
 
-It reflects how I approach real-world machine learning problems:  
+It reflects how I approach machine learning problems:  
 **understand the domain → engineer meaningful features → validate correctly → deploy robustly.**
