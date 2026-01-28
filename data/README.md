@@ -7,6 +7,7 @@ https://www.kaggle.com/competitions/nfl-big-data-bowl-2026
 
 Place the files in:
 
+```text
 data/raw/
 ├── train_tracking_week_1.csv
 ├── ...
@@ -17,3 +18,5 @@ data/raw/
 ├── players.csv
 ├── plays.csv
 └── games.csv
+
+
