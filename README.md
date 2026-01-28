@@ -132,7 +132,6 @@ The dataset is provided by Kaggle:
 Due to Kaggle’s data usage policy, raw data is **not** included in this repository.  
 After downloading, place the files in:
 
-```text
 data/raw/
 ├── train_tracking_week_1.csv
 ├── train_tracking_week_2.csv
@@ -152,15 +151,9 @@ Paths are relative to the project root (`data/raw/train_tracking_week_1.csv`)
 
 ---
 
-## 🎯 Why This Project Matters
+## 📄 Project Report
 
-This repository demonstrates:
+The full academic report describing methodology, models, and validation:
 
-- End-to-end ML system design on real spatiotemporal data  
-- Physics-aware feature engineering  
-- Proper handling of temporal structure and data leakage  
-- Model comparison and bias–variance trade-offs  
-- Production-style inference pipeline  
+📘 **[Project Report – NFL Big Data Bowl 2026](reports/project_report.pdf)**
 
-It reflects how I approach machine learning problems:  
-**understand the domain → engineer meaningful features → validate correctly → deploy robustly.**
